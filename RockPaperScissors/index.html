@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <meta charset="UTF-8">
+  <title>Rock/Paper/Scissors BY MariusS</title>
+</head>
+<body>
+  <section>
+      <div id="pcSide" class="side">
+        <img id="pcRock" class="pcImg" src="Images/rock-NoBG.png" alt="Rock">
+        <img id="pcPaper" class="pcImg" src="Images/paper-NoBG.png" alt="Paper">
+        <img id="pcScissors" class="pcImg" src="Images/scissors-NoBG.png" alt="Scissors">
+      </div>
+      <div class="statusBar">
+        <div class="score">
+          <span>Score:</span>
+          <div>
+            <p id="pcScore">0</p>
+            <p id="playerScore">0</p>
+          </div>
+        </div>
+        <p id="battleResult">Choose your weapon!</p>
+        <p id="resetBtn" onclick="resetScore()">Reset score!</p>
+      </div>
+      <div id="playerSide" class="side">
+        <img id="playerRock" class="playerImg" onclick="getPlayerChoice('Rock')" src="Images/rock-NoBG.png" alt="Rock">
+        <img id="playerPaper" class="playerImg" onclick="getPlayerChoice('Paper')" src="Images/paper-NoBG.png "alt="Paper">
+        <img id="playerScissors" class="playerImg" onclick="getPlayerChoice('Scissors')" src="Images/scissors-NoBG.png" alt="Scissors">
+      </div>
+  </section>
+
+  
+</body>
+<script src="index.js"></script>
+</html>
