@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <p class="title">Etch-a-Sketch</p>
+        <div class="numberOfSquaresDiv">
+            <input type="range" id="numberOfSquares"
+            min="16" max="64" value="24" step="1"
+            oninput="this.nextElementSibling.value = this.value">
+            <output>24</output>
+        </div>
+        <div class="buttonsDiv">
+            <button class="button-29 active" id="blackBG">Black</button>
+            <button class="button-29 rgb" id="rgbBG">RGB</button>
+            <button class="button-29 white" id="whiteBG">White</button>
+        </div>
+        <div class="squareDivs"></div>
+        <button class="button-29 reset" id="resetGrid">RESET</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
